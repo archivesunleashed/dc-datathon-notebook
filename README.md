@@ -98,7 +98,7 @@ ubuntu@datathon-1:~$ jupyter-notebook --ip=192.168.69.5
 
 - In your browser, navigate to the IP address you shelled into `206.167.x.x` + `:8888/?token=WHAT-EVER-THE-TOKEN-IS-ABOVE`
 
-!()[jupyter.png]
+![](jupyter.png)
 
 
 ## Types of Visualizations
