@@ -110,10 +110,6 @@ There are several types of visualizations that you can produce in the Jupyter No
 * *Sentiment Analysis*: Visualizes sentiment scores by domain and year.
 * *Network Analysis*: Shows the connections and relationship among websites through network graph layouts. 
 
-## Additional Notes
-
-This repository also uses the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html), which provide several helpful options for [customizing](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/common.html#docker-options) the container environment.
-
 ## License
 
 This application is available as open source under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
