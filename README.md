@@ -2,11 +2,15 @@
 
 Jupyter notebook to assist in creating additional analysis and visualizations of Archives Unleashed Cloud derivatives as the [Archives Unleashed Washington, DC Datathon](https://archivesunleashed.org/washington/).
 
-[Archives Unleashed Cloud: Jupyter Notebooks](https://github.com/archivesunleashed/auk-notebooks)
+The datathon notebook is derived from [Archives Unleashed Cloud: Jupyter Notebooks](https://github.com/archivesunleashed/auk-notebooks).
 
 ## Getting Started
 
-- Shell into your assigned datathon VM:
+- Shell into your assigned datathon VM with the provided key, and IP address:
+
+```
+ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.xx.xx
+```
 
 ```console
 $ ssh -i ~/.ssh/archives-hackathon.key ubuntu@206.167.180.194
@@ -46,7 +50,11 @@ Last login: Wed Mar 13 14:01:02 2019 from 135.23.229.220
 ubuntu@datathon-1:~$
 ```
 
-- Change directory to `auk-notebooks`:
+- Change directory to `dc-datathon-notebook`:
+
+```bash
+cd dc-datathon-notebook
+```
 
 ```console
 ubuntu@datathon-1:~$ cd dc-datathon-notebook
@@ -54,6 +62,10 @@ ubuntu@datathon-1:~/dc-datathon-notebook$
 ```
 
 - Get the local IP address (`192.168.x.x`) of the VM with `ifconfig`:
+
+```
+ifconfig
+```
 
 ```console
 ubuntu@datathon-1:~/dc-datathon-notebook$ ifconfig
@@ -79,11 +91,15 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 - Start-up the notebook with `jupyter-notebook` and the IP address you found above:
 
+```bash
+jupyter-notebook --ip=192.168.xx.xx
+```
+
 ```
 ubuntu@datathon-1:~$ jupyter-notebook --ip=192.168.69.5
 [I 21:02:35.037 NotebookApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/lib/python3.7/site-packages/jupyterlab
 [I 21:02:35.037 NotebookApp] JupyterLab application directory is /home/ubuntu/anaconda3/share/jupyter/lab
-[I 21:02:35.039 NotebookApp] Serving notebooks from local directory: /home/ubuntu/auk-notebooks
+[I 21:02:35.039 NotebookApp] Serving notebooks from local directory: /home/ubuntu/dc-datathon-notebook
 [I 21:02:35.039 NotebookApp] The Jupyter Notebook is running at:
 [I 21:02:35.039 NotebookApp] http://192.168.69.5:8888/?token=ac29bf0040e82569eebcbd62696a49e442226c08b4b8b450
 [I 21:02:35.039 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
@@ -96,7 +112,11 @@ ubuntu@datathon-1:~$ jupyter-notebook --ip=192.168.69.5
         http://192.168.69.5:8888/?token=ac29bf0040e82569eebcbd62696a49e442226c08b4b8b450
 ```
 
-- In your browser, navigate to the IP address you shelled into `206.167.x.x` + `:8888/?token=WHAT-EVER-THE-TOKEN-IS-ABOVE`
+- In your browser, navigate to the IP address you shelled into `206.167.x.x` + `:8888/?token=WHAT-EVER-THE-TOKEN-IS-ABOVE`:
+
+```
+http://206.167.x.x:8888/?token=ac29bf0040e82569eebcbd62696a49e442226c08b4b8b450
+```
 
 ![](jupyter.png)
 
@@ -113,15 +133,6 @@ There are several types of visualizations that you can produce in the Jupyter No
 ## License
 
 This application is available as open source under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-## Resources
-
-The example dataset in the `data` directory was created with the [Archives Unleashed Cloud](https://cloud.archivesunleashed.org/), and is drawn from the [B.C. Teachers' Labour Dispute (2014)](https://archive-it.org/collections/4867), collected by the University of Victoria Libraries. We are grateful that they've allowed us to use this material. The full-text derivative file is a random sample (37,000 lines) of the complete file because of GitHub file size limitations.
-
-If you use this material, please cite it along the following lines:
-
-- Archives Unleashed Project. (2018). Archives Unleashed Toolkit (Version 0.17.0). Apache License, Version 2.0.
-- University of Victoria Libraries, B.C. Teachers' Labour Dispute (2014), Archive-It Collection 4867, https://archive-it.org/collections/4867.
 
 ## Acknowledgments
 
