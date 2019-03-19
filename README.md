@@ -1,8 +1,8 @@
 # AU Washington, DC Datathon Notebook
 
-Jupyter notebook to assist in creating additional analysis and visualizations of Archives Unleashed Cloud derivatives as the [Archives Unleashed Washington, DC Datathon](https://archivesunleashed.org/washington/).
+Jupyter notebook to assist in creating additional analysis and visualizations of Archives Unleashed Cloud derivatives at the [Archives Unleashed Washington, DC Datathon](https://archivesunleashed.org/washington/).
 
-The datathon notebook is derived from [Archives Unleashed Cloud: Jupyter Notebooks](https://github.com/archivesunleashed/auk-notebooks).
+The datathon notebook is derived from [Archives Unleashed Cloud: Jupyter Notebook](https://github.com/archivesunleashed/auk-notebooks).
 
 ## Getting Started
 
@@ -120,6 +120,7 @@ http://206.167.x.x:8888/?token=ac29bf0040e82569eebcbd62696a49e442226c08b4b8b450
 
 ![](jupyter.png)
 
+**If you need help or run into any problems getting setup, `@` mention `ruebot` in Slack.**
 
 ## Types of Visualizations
 
